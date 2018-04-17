@@ -14,3 +14,4 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 gem 'rspec-rails', '~> 3.7.2'
+gem 'draper', '~> 3.0.1'

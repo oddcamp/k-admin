@@ -1,0 +1,9 @@
+---
+en:
+  shared:
+    admin:
+      header:
+        header: K-Admin Dashboard
+        dashboard: App
+    footer:
+      header: K-Admin Footer
