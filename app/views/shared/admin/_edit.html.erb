@@ -1,0 +1,10 @@
+<%= render 'form' %>
+
+<% if policy(@resource).destroy? %>
+  <footer class="footer">
+    <%= button_to t("destroy"),
+        { action: 'destroy', id: @resource.id }, method: :delete,
+        data: { confirm: t("are_you_sure"), disable_with: t("deleting") },
+        class: 'button warning' %>
+  </footer>
+<% end %>

@@ -1,0 +1,16 @@
+<table class="stack">
+  <thead>
+  <tr>
+    <th><%= t(".name") %></th>
+    <th>&nbsp;</th>
+  </tr>
+  </thead>
+
+  <% @resources.each do |resource| %>
+    <%= render resource.decorate.model_name.singular, resource: resource %>
+  <% end %>
+</table>
+
+<%= paginate @resources %>
+
+<%= link_to t(".add"), @resource_class.decorator_class.new_admin_path, class: "button" %>
