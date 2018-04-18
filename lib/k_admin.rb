@@ -1,5 +1,5 @@
 require "k_admin/engine"
 
 module KAdmin
-  # Your code goes here...
+  mattr_accessor :authentication_method
 end

@@ -69,7 +69,7 @@ GEM
     erubi (1.7.1)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.0.0)
+    i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     kaminari (1.1.1)
       activesupport (>= 4.1.0)
