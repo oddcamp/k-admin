@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 5.1"
   s.add_dependency "draper", "~> 3.0.1"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency "kaminari", "~> 1.1.1"
+  s.add_dependency "pundit", "~> 1.1.0"
 end

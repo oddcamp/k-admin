@@ -1,12 +1,13 @@
-class Admin::BaseController < ApplicationController
+class Admin::BaseController < ActionController::Base
+  include Paginatable
+  include Pundit
+  protect_from_forgery
+
   layout 'admin'
 
-  before_action :authenticate_user!
   before_action :authorize_admin!
 
-  private
-
   def authorize_admin!
-    authorize(User, :access_admin?)
+    # add your admin authentication here
   end
 end

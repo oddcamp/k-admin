@@ -15,3 +15,5 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 gem 'rspec-rails', '~> 3.7.2'
 gem 'draper', '~> 3.0.1'
+gem 'kaminari', '~> 1.1.1'
+gem 'pundit', '~> 1.1.0'

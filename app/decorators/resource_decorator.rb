@@ -1,4 +1,4 @@
-class ResourceDecorator < ApplicationDecorator
+class ResourceDecorator < Draper::Decorator
   delegate_all
 
   def admin_path

@@ -64,4 +64,9 @@ class Admin::ResourcesController < Admin::BaseController
   def admin_resource_path
     send("admin_#{resource_class.to_s.downcase.pluralize}_path")
   end
+
+  def policy(record)
+    policy_class_name = defined?("#{resource_class.to_s}Policy".constantize.new) ? "#{resource_class.to_s}Policy" : "ResourcePolicy"
+    policies[record] ||= policy_class_name.constantize.new(pundit_user, record)
+  end
 end
