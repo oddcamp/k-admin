@@ -25,7 +25,7 @@ To add a resource to the admin dashboard just run the following command
 rails g admin_resource model_name
 ```
 
-That'll create the following files, which you then can adapt to your model
+That'll create the following files, which you can afterwards adapt to your model
 
 ```bash
 /app/controllers/admin/model_name_controller.rb # model controller
@@ -36,7 +36,7 @@ That'll create the following files, which you then can adapt to your model
 All the remaining views/controllers logic will be defaulted to this engine files. To override them just create them on your local repo and you're good to go.
 
 ## Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/kollegorna/k-admin. 
+Bug reports and pull requests are welcome on GitHub at https://github.com/kollegorna/k-admin.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
