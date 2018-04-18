@@ -8,6 +8,6 @@ class Admin::BaseController < ActionController::Base
   before_action :authorize_admin!
 
   def authorize_admin!
-    send(KAdmin.authentication_method) if KAdmin.authentication_method
+    send(*KAdmin.authentication_method) if KAdmin.authentication_method.present?
   end
 end
