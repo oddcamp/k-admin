@@ -1,0 +1,15 @@
+<%= simple_form_for @resource, url: @resource.admin_path do |f| %>
+  <!-- add input fields here (Example below) -->
+  <!-- div class="row">
+    <div class="small-12 columns">
+      <%= f.label :name %>
+      <%= f.input :name %>
+    </div>
+  </div -->
+
+  <div class="row">
+    <div class="small-12 columns">
+      <%= f.submit t("save"), class: "button" %>
+    </div>
+  </div>
+<% end %>

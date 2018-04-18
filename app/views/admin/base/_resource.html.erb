@@ -1,0 +1,9 @@
+<tr>
+  <td>
+    <%= link_to resource.to_s, resource.decorate.admin_path %>
+  </td>
+
+  <td>
+    <%= link_to t("edit"), resource.decorate.edit_admin_path, class: "button hollow" %>
+  </td>
+</tr>

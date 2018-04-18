@@ -7,7 +7,7 @@
   </thead>
 
   <% @resources.each do |resource| %>
-    <%= render resource.decorate.model_name.singular, resource: resource %>
+    <%= render 'resource', resource: resource %>
   <% end %>
 </table>
 
