@@ -3,7 +3,7 @@
     <ul class="dropdown menu" data-dropdown-menu>
       <li class="menu-text"><%= t('.header') %></li>
       <% available_resources.each do |resource| %>
-        <li><%= link_to resource, send("admin_#{resource}_path") %></li>
+        <li><%= link_to resource.titlecase, send("admin_#{resource}_path") %></li>
       <% end %>
     </ul>
   </div>

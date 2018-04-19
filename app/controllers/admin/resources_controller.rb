@@ -66,7 +66,9 @@ class Admin::ResourcesController < Admin::BaseController
   end
 
   def policy(record)
-    policy_class_name = defined?("#{record.to_s}Policy".constantize.new) ? "#{record.to_s}Policy" : "ResourcePolicy"
+    record_class = record.instance_of?(String) ? record : record.class
+
+    policy_class_name = defined?("#{record_class.to_s}Policy".constantize.new) ? "#{record_class.to_s}Policy" : "ResourcePolicy"
     policies[record] ||= policy_class_name.constantize.new(pundit_user, record)
   end
 end
